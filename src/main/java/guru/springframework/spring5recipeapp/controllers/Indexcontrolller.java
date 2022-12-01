@@ -11,8 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Indexcontrolller {
 
-    @RequestMapping({"","/","'indexx"})
-    public String getIndexPage(){
+    @RequestMapping({"", "/", "'index"})
+    public String getIndexPage() {
+
+        System.out.println("Some message to say...5555");
+
         return "index";
     }
 }
